@@ -12,6 +12,10 @@ public class MemberService {
 	@Autowired
 	MemberDao memberDao;
 	
+	public void login(Member m) throws Exception{
+		memberDao.login(m);
+	}
+	
 	public void insertMember(Member m) throws Exception{
 		memberDao.insertMember(m);
 	}
